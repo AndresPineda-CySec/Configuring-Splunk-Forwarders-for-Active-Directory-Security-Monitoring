@@ -36,7 +36,7 @@ In this project, I configured Splunk Universal Forwarders on a Windows host and 
 <h2>Project Walk-Through:</h2>
 
 
-<h3 align="center">Securing My Environment:</h3>
+<h3 align="center">Setting up the environment:</h3>
 <p align="center">
 <br />
 <br />
