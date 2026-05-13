@@ -40,7 +40,7 @@ In this project, I configured Splunk Universal Forwarders on a Windows host and 
 <p align="center">
 <br />
 <br />
-Before deploying my honeypot, I want to secure my environment to minimize risks and ensure the project runs safely. The first step is configuring VirtualBox to run my Ubuntu virtual machine (VM) using a Bridged Network adapter. This setup allows the VM to connect directly to the router, making it WAN-facing and accessible from the internet. Since this can introduce potential security risks, I’ve isolated the VM within a Demilitarized Zone (DMZ) on my network. This provides an extra layer of security by segmenting the VM from the rest of my internal devices, helping to contain any threats and prevent lateral movement across my home network.<br />
+To begin this project, I must configure my virtual machines.<br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20155242.png?raw=true" height="40%" width="40%"/> <br />
