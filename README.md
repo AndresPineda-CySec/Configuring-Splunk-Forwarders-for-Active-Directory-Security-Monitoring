@@ -43,7 +43,7 @@ In this project, I configured Splunk Universal Forwarders on a Windows host and 
 Before deploying my honeypot, I want to secure my environment to minimize risks and ensure the project runs safely. The first step is configuring VirtualBox to run my Ubuntu virtual machine (VM) using a Bridged Network adapter. This setup allows the VM to connect directly to the router, making it WAN-facing and accessible from the internet. Since this can introduce potential security risks, I’ve isolated the VM within a Demilitarized Zone (DMZ) on my network. This provides an extra layer of security by segmenting the VM from the rest of my internal devices, helping to contain any threats and prevent lateral movement across my home network.<br />
 <br />
 <br />
-<img src="https://github.com/AndresPineda-CySec/Cowrie-and-Splunk-Honeypot-Threat-Analysis/blob/main/Images/BridgeAdapter.png?raw=true" height="80%" width="80%"/> <br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20155242.png?raw=true" height="80%" width="80%"/> <br />
 To change the network adapter settings in VirtualBox, I start by selecting my Ubuntu virtual machine and navigating to the "Settings" menu. From there, I go to the "Network" tab, where I change the "Attached to" option from the default NAT setting to "Bridged Adapter." This configuration allows the VM to communicate directly with devices on the network and receive its own IP address from the router. Additionally, I enabled "Promiscuous Mode" to allow the VM to capture all network traffic on the interface, which is useful for monitoring and logging potential attacks.<br />
 <br />
 <br />
