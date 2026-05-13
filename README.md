@@ -40,11 +40,8 @@ In this project, I configured Splunk Universal Forwarders on a Windows host and 
 <p align="center">
 <br />
 <br />
-To begin this project, I must configure my virtual machines.<br />
-<br />
-<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20155242.png?raw=true" height="40%" width="40%"/> <br />
-To change the network adapter settings in VirtualBox, I start by selecting my Ubuntu virtual machine and navigating to the "Settings" menu. From there, I go to the "Network" tab, where I change the "Attached to" option from the default NAT setting to "Bridged Adapter." This configuration allows the VM to communicate directly with devices on the network and receive its own IP address from the router. Additionally, I enabled "Promiscuous Mode" to allow the VM to capture all network traffic on the interface, which is useful for monitoring and logging potential attacks.<br />
+To begin this project, I must configure my virtual machines.<br />
 <br />
 <br />
 Next, I must configure my router's firewall to complete two tasks: First, port forwarding 22 (SSH) and 23 (Telnet) to my Ubuntu VM. placing my Ubuntu VM into a DMZ. To complete this setup, I must start my Ubuntu VM and run the "ifconfig" command to identify its local IP address. While my router should automatically detect the VM as a connected device, I use the command to verify the connection and confirm the correct IP address before configuring port forwarding and placing the VM in the DMZ.<br />
