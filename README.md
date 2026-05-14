@@ -45,7 +45,11 @@ I first need to configure my virtual machines to align with the logical network 
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Topology.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
-Next, I must configure my router's firewall to complete two tasks: First, port forwarding 22 (SSH) and 23 (Telnet) to my Ubuntu VM. placing my Ubuntu VM into a DMZ. To complete this setup, I must start my Ubuntu VM and run the "ifconfig" command to identify its local IP address. While my router should automatically detect the VM as a connected device, I use the command to verify the connection and confirm the correct IP address before configuring port forwarding and placing the VM in the DMZ.<br />
+I will begin by creating the network environment for this project using a NAT Network. I chose a NAT Network because it allows all of the virtual machines to communicate with each other while still providing internet access through the host machine, making it ideal for a safe and isolated lab environment.<br />
+For the network address, I selected 192.168.10.0/24. The /24 subnet mask corresponds to 255.255.255.0, which provides up to 254 usable host addresses within the network. This subnet size is commonly used in small to medium-sized environments because it is simple to manage while still providing more than enough IP addresses for this lab setup.<br />
+The usable IP address range for this network will be 192.168.10.1 – 192.168.10.254, with 192.168.10.0 representing the network address and 192.168.10.255 serving as the broadcast address.<br />
+Finally, I named the network “Active Directory Lab” to clearly identify the purpose of the environment and keep the virtual infrastructure organized throughout the project.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20160358.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
 <br />
