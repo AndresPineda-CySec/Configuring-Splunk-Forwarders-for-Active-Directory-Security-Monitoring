@@ -88,6 +88,10 @@ I then installed Splunk Universal Forwarder and Sysmon. To configure the forward
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20223701.png?raw=true" height="100%" width="100%"/> <br />
 <br />
 <br />
+Now that I have updated the inputs.conf file, I must restart Splunk Universal Forwarder in Services. While in services, I notice the forwarder is set to start as an NT service, but I need it to start as a local service.
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20223902.png?raw=true" height="100%" width="100%"/> <br />
+<br />
+<br />
 I repeat the last three steps on my Windows Server VM with the only difference being the IP address: 192.168.10.7.<br />
 <br />
 <br />
