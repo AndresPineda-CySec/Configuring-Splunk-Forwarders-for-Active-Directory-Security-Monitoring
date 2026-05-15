@@ -84,11 +84,11 @@ Moving onto my Windows 10 machine...
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20221322.png?raw=true" height="100%" width="100%"/> <br />
 <br />
 <br />
-I then installed Splunk Universal Forwarder and Sysmon. To configure the forwarder to know what to send to Splunk I created a inputs.conf file and store it in the local folder within the Splunk Universal Forwarder directory.<br />
+I then installed Splunk Universal Forwarder and Sysmon. To configure the forwarder to know what data to send to Splunk, I created an inputs.conf file and placed it in the local folder inside the Splunk Universal Forwarder directory.<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20223701.png?raw=true" height="100%" width="100%"/> <br />\
 <br />
 <br />
-I repeat the previous two steps on my Windows Server VM with the only difference being the IP address: 192.168.10.7.<br />
+I repeat the last three steps on my Windows Server VM with the only difference being the IP address: 192.168.10.7.<br />
 <br />
 <br />
 The last machine to configure is my Kali VM.<br />
