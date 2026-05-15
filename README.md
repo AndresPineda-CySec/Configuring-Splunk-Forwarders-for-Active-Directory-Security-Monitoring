@@ -68,6 +68,15 @@ First, I list the Netplan configuration files to identify which specific Netplan
 <br />
 I added the seven boxed lines below to the file. First, I turned off DHCP to assign the machine a static IP address of 192.168.10.10/24. The nameserver was set to 8.8.8.8 so the machine can use Google's public DNS server to resolve DNS queries. I also configured the default route to use 192.168.10.1 as the gateway. Everything outside of the box was left as is.<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20162032.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+I save the file and close the editor. I then type the command "Sudo netplan apply" to finalize the configuration changes to the 50-cloud-init.yaml file.<br />
+<br />
+<br />
+Typing ip a into the console shows the newly configured IP address, confirming the changes were successfully applied.<br/>
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20162539.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
 
 
 
