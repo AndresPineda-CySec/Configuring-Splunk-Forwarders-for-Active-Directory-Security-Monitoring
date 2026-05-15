@@ -85,13 +85,14 @@ Moving onto my Windows 10 machine...
 <br />
 <br />
 I then installed Splunk Universal Forwarder and Sysmon. To configure the forwarder to know what data to send to Splunk, I created an inputs.conf file and placed it in the local folder inside the Splunk Universal Forwarder directory.<br />
-<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20223701.png?raw=true" height="100%" width="100%"/> <br />\
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20223701.png?raw=true" height="100%" width="100%"/> <br />
 <br />
 <br />
 I repeat the last three steps on my Windows Server VM with the only difference being the IP address: 192.168.10.7.<br />
 <br />
 <br />
-The last machine to configure is my Kali VM.<br />
+The last machine to configure is my Kali VM. I updated it to use a static IP address, and according to my network topology, the Kali machine is set to 192.168.10.250. To change this, I right-clicked the network icon in the top-right corner of the screen and selected “Edit Connections.” From there, I opened “Wired Connection 1” and went to the IPv4 tab. I then updated the address, netmask, and gateway settings. I also set the DNS server to 8.8.8.8.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20151630.png?raw=true" height="100%" width="100%"/> <br />
 
 
 
