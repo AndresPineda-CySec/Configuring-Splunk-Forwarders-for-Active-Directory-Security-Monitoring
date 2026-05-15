@@ -10,6 +10,7 @@ In this project, I configured Splunk Universal Forwarders on a Windows host and 
 - <b>Hydra</b>
 - <b>Splunk</b>
 - <b>CMD</b>
+- <b>Terminal</b>
 - <b>Active Directory</b>
 
 <h2>Environments Used</h2>
