@@ -62,8 +62,6 @@ The next step is to configure the machines.<br />
 <br />
 <br />
 I will start by assigning my Ubuntu Splunk server its correct IP.<br/>
-<br />
-<br />
 First, I list the Netplan configuration files to identify which specific Netplan file my version of Ubuntu is using. Once identified, I open the file using the Nano text editor to begin editing the network configuration.<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20162003.png?raw=true" height="80%" width="80%"/> <br />
 <br />
