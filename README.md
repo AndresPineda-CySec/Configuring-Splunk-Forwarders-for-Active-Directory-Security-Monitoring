@@ -84,6 +84,16 @@ Moving onto my Windows 10 machine...
 <br />
 ...I entered the network settings, right-clicked the Ethernet adapter, and selected Properties. From there, I double-clicked IPv4 and disabled DHCP. Once DHCP is disabled, I can now assign the machine a static IP address of 192.168.10.100 and a subnet mask of 255.255.255.0 (which corresponds to the /24 CIDR notation). I set the default gateway to 192.168.10.1 and configured the DNS server to use 8.8.8.8; this will only be temporary.<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20221322.png?raw=true" height="100%" width="100%"/> <br />
+<br />
+<br />
+I then installed Splunk Universal Forwarder and Sysmon.
+<br />
+<br />
+I repeat the previous two steps on my Windows Server VM with the only difference being the IP address: 192.168.10.7.<br />
+<br />
+<br />
+The last machine to configure is my Kali VM.<br />
+
 
 
 
