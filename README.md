@@ -40,7 +40,7 @@ In this project, I configured Splunk Universal Forwarders on a Windows host and 
 <p align="center">
 <br />
 <br />
-These are the VMs I will be using for this lab. The Splunk machine is running on Ubuntu, and the machine named ADDC01 will be the Active Directory server running on Windows Server 2022.<br />
+These are the VMs I will be using for this lab. The Splunk machine runs Ubuntu, and the machine named ADDC01 will be the Active Directory server running Windows Server 2022. Both Windows machines will be equipped with Sysmon and Splunk Universal Forwarders.<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20155242.png?raw=true" height="40%" width="40%"/> <br />
 <br />
 <br />
@@ -56,6 +56,9 @@ The usable IP address range for this network will be 192.168.10.1 – 192.168.10
 <br />
 Next, I will add all virtual machines to my NAT Network. Right-click on a machine, select Settings, and then go to the Network tab. Here, I select "Enable Network Adapter," change the "Attached to" tab to NAT Network, and select the network I made in the previous step for the "Name" tab.<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20160531.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+The next step is to assign all the correct IP configurations to each machine.
 <br />
 <br />
 <h3 align="center">Installing Cowrie:</h3>
