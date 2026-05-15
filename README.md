@@ -61,6 +61,22 @@ Next, I will add all virtual machines to my NAT Network. Right-click on a machin
 The next step is to assign all the correct IP configurations to each machine.
 <br />
 <br />
+
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20162003.png?raw=true" height="80%" width="80%"/> <br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 <h3 align="center">Installing Cowrie:</h3>
 <p align="center">
 <br />
