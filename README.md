@@ -93,76 +93,19 @@ Now that I have updated the inputs.conf file, I went to services to restart the 
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20223951.png?raw=true" height="50%" width="50%"/> <br />
 <br />
 <br />
-I repeat the last three steps on my Windows Server VM with the only difference being the IP address: 192.168.10.7.<br />
+I repeat all Windows 10 steps on my Windows Server VM with the only difference being the IP address: 192.168.10.7.<br />
 <br />
 <br />
 The last machine to configure is my Kali VM. I updated it to use a static IP address, and according to my network topology, the Kali machine is set to 192.168.10.250. To change this, I right-clicked the network icon in the top-right corner of the screen and selected “Edit Connections.” From there, I opened “Wired Connection 1” and went to the IPv4 tab. I then updated the address, netmask, and gateway settings. I also set the DNS server to 8.8.8.8.<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20151630.png?raw=true" height="80%" width="80%"/> <br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-<h3 align="center">Installing Cowrie:</h3>
-<p align="center">
-<br />
-<br />
-Before installing Cowrie, I have to make sure I install a few dependencies to ensure Cowrie can run efficiently.
-<br />
-<br />
-<img src="https://github.com/AndresPineda-CySec/Cowrie-and-Splunk-Honeypot-Threat-Analysis/blob/main/Images/installDependency.png?raw=true" height="80%" width="80%"/> <br />
-This command installs essential dependencies for setting up Cowrie. It installs "git" for version control, "python3-venv" for creating isolated Python environments, "libssl-dev" for cryptographic functions, "libffi-dev" for interfacing with C libraries, "build-essential" for compiling software, "libpython3-dev" for Python development headers, and "python3-minimal" for the minimal Python 3 installation required to run Python applications. These packages ensure that Cowrie runs securely and has all the necessary tools for building and interacting with Python code.<br />
 <br />
 <br />
 <br />
-<br />
+<br />  
 <h3 align="center">Configuring Splunk:</h3>
 <p align="center">
-<br />
-<br />
-<img src="https://github.com/AndresPineda-CySec/Cowrie-and-Splunk-Honeypot-Threat-Analysis/blob/main/Images/splunkAddData.png?raw=true" height="100%" width="810%"/> <br />
-To integrate Cowrie with Splunk, I must first create an HTTP Event Collector (HEC) in Splunk. I start by navigating to "Settings" and selecting "Add Data" to begin the setup process.<br />
-<br />
-<br />
-<img src="https://github.com/AndresPineda-CySec/Cowrie-and-Splunk-Honeypot-Threat-Analysis/blob/main/Images/SplunkAddMonitor.png?raw=true" height="100%" width="100%"/> <br />
-This takes me to the data input page, where I select the "Monitor" option to continue setting up the HTTP Event Collector.<br />
-<br />
-<br />
-<img src="https://github.com/AndresPineda-CySec/Cowrie-and-Splunk-Honeypot-Threat-Analysis/blob/main/Images/SplunkHTTPEventCollector.png?raw=true" height="100%" width="100%"/> <br />
-After selecting "Monitor," I arrive at the "Add Data" page. Here, I choose "HTTP Event Collector" from the left panel and set the new HEC name to "Cowrie." I keep the default settings for the remaining configurations and click "Next" to proceed through the setup steps.<br />
-<br />
-<br />
-<br />
-<br />
-<h3 align="center">Exporting Cowrie Logs to Splunk:</h3>
-<p align="center">
-<br />
-<br />
-<img src="https://github.com/AndresPineda-CySec/Cowrie-and-Splunk-Honeypot-Threat-Analysis/blob/main/Images/Cowrie.cfg.png?raw=true" height="60%" width="60%"/> <br />
-To link my honeypot to Splunk, I first access my Ubuntu VM and switch to the "cowrie" user through the terminal. From there, I navigate the directory to get to the Cowrie configuration file and use the command "nano cowrie.cfg" to access cowrie.cfg.<br /> 
-<br />
-<br />
-<img src="https://github.com/AndresPineda-CySec/Cowrie-and-Splunk-Honeypot-Threat-Analysis/blob/main/Images/OriginalCowrieSplunkconfig.png?raw=true" height="100%" width="100%"/> <br />
-Inside the config file, I located the Splunk output section, which was initially disabled and configured with the incorrect URL and token; both need to be updated for proper integration.<br />
 <br />
 <br />
 <br />
 <br />
 <h3 align="center">Results:</h3>
-<p align="center">
-After Allowing Cowrie to run for two days straight, these are the results:
-<br />
-<br />
-<img src="https://github.com/AndresPineda-CySec/Cowrie-and-Splunk-Honeypot-Threat-Analysis/blob/main/Images/CowrieCommandLog.png?raw=true" height="60%" width="60%"/> <br />
-Any data sent to the honeypot is automatically logged. To view these logs, I run "cat cowrie.log" to display the default log file used by Cowrie.<br />
-<br />
-<br />
