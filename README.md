@@ -40,7 +40,10 @@ In this project, I configured Splunk Universal Forwarders on a Windows host and 
 <p align="center">
 <br />
 <br />
+These are the VMs I will be using for this lab. The Splunk machine is running on Ubuntu, and the machine named ADDC01 will be the Active Directory server running on Windows Server 2022.<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20155242.png?raw=true" height="40%" width="40%"/> <br />
+<br />
+<br />
 I first need to configure my virtual machines to align with the logical network topology settings. <br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Topology.png?raw=true" height="80%" width="80%"/> <br />
 <br />
