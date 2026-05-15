@@ -58,10 +58,10 @@ Next, I will add all virtual machines to my NAT Network. Right-click on a machin
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20160531.png?raw=true" height="100%" width="100%"/> <br />
 <br />
 <br />
-The next step is to assign all the correct IP configurations to each machine.<br />
+The next step is to configure the machines.<br />
 <br />
 <br />
-I will start with my Ubuntu Splunk server.<br/>
+I will start by assigning my Ubuntu Splunk server its correct IP.<br/>
 <br />
 <br />
 First, I list the Netplan configuration files to identify which specific Netplan file my version of Ubuntu is using. Once identified, I open the file using the Nano text editor to begin editing the network configuration.<br />
