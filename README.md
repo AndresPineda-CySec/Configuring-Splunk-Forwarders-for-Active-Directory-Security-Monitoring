@@ -61,8 +61,10 @@ Next, I will add all virtual machines to my NAT Network. Right-click on a machin
 The next step is to assign all the correct IP configurations to each machine.<br />
 <br />
 <br />
-First, I list the Netplan configuration files to identify which specific Netplan file my version of Ubuntu is using. Once identified, I open the file using the Nano text editor to begin editing the network configuration.
+I will start with my Ubuntu Splunk server.<br/>
 <br />
+<br />
+First, I list the Netplan configuration files to identify which specific Netplan file my version of Ubuntu is using. Once identified, I open the file using the Nano text editor to begin editing the network configuration.<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20162003.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
@@ -70,14 +72,18 @@ I added the seven boxed lines below to the file. First, I turned off DHCP to ass
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20162032.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
-I save the file and close the editor. I then type the command "Sudo netplan apply" to finalize the configuration changes to the 50-cloud-init.yaml file.<br />
+I save the file and close the editor. I then type the command "sudo netplan apply" to finalize the configuration changes to the 50-cloud-init.yaml file.<br />
 <br />
 <br />
-Typing ip a into the console shows the newly configured IP address, confirming the changes were successfully applied.<br/>
+Typing "ip a" into the console shows the newly configured IP address, confirming the changes were successfully applied.<br/>
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20162539.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
-
+Moving onto my Windows 10 machine...
+<br />
+<br />
+...I entered the network settings, right-clicked the Ethernet adapter, and selected Properties. From there, I double-clicked IPv4 and disabled DHCP. Once DHCP is disabled, I can now assign the machine a static IP address of 192.168.10.100 and a subnet mask of 255.255.255.0 (which corresponds to the /24 CIDR notation). I set the default gateway to 192.168.10.1 and configured the DNS server to use 8.8.8.8; this will only be temporary.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20221322.png?raw=true" height="80%" width="80%"/> <br />
 
 
 
