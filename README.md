@@ -88,15 +88,16 @@ I then installed Splunk Universal Forwarder and Sysmon. To configure the forward
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20223701.png?raw=true" height="100%" width="100%"/> <br />
 <br />
 <br />
-Now that I have updated the inputs.conf file, I must restart Splunk Universal Forwarder in Services. While in services, I notice the forwarder is set to start as an NT service, but I need it to start as a local service.
-<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20223902.png?raw=true" height="100%" width="100%"/> <br />
+Now that I have updated the inputs.conf file, I went to services to restart the forwarder. There, I adjusted the “Log On As” setting to run as a local service account and restarted the Splunk Universal Forwarder in Services.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20223902.png?raw=true" height="80%" width="80%"/> <br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20223951.png?raw=true" height="50%" width="50%"/> <br />
 <br />
 <br />
 I repeat the last three steps on my Windows Server VM with the only difference being the IP address: 192.168.10.7.<br />
 <br />
 <br />
 The last machine to configure is my Kali VM. I updated it to use a static IP address, and according to my network topology, the Kali machine is set to 192.168.10.250. To change this, I right-clicked the network icon in the top-right corner of the screen and selected “Edit Connections.” From there, I opened “Wired Connection 1” and went to the IPv4 tab. I then updated the address, netmask, and gateway settings. I also set the DNS server to 8.8.8.8.<br />
-<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20151630.png?raw=true" height="100%" width="100%"/> <br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20151630.png?raw=true" height="80%" width="80%"/> <br />
 
 
 
