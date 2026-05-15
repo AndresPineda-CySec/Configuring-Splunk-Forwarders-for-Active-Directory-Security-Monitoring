@@ -50,10 +50,12 @@ I first need to configure my virtual machines to align with the logical network 
 <br />
 I will begin by creating the network environment for this project using a NAT Network, which allows all of the virtual machines to communicate with each other while still providing internet access through the host machine.<br />
 For the network address, I selected 192.168.10.0/24. The /24 subnet mask corresponds to 255.255.255.0, which provides up to 254 usable host addresses within the network. This subnet size is commonly used in small to medium-sized environments because it is simple to manage while still providing more than enough IP addresses for this lab setup.<br />
-The usable IP address range for this network will be 192.168.10.1 – 192.168.10.254 and the name of the network will be “Active Directory Lab."<br />
+The usable IP address range for this network will be 192.168.10.1 – 192.168.10.254, and the name of the network will be “Active Directory Lab."<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20160358.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
+Next, I will add all virtual machines to my NAT Network. Right-click on a machine, select Settings, and then go to the Network tab. Here, I select "Enable Network Adapter," change the "Attached to" tab to NAT Network, and select the network I made in the previous step for the "Name" tab.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-08%20160531.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
 <h3 align="center">Installing Cowrie:</h3>
