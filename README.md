@@ -113,3 +113,7 @@ In the Inputs.conf file, I configured the Splunk Universal Forwarder to send spe
 Now I have to create the index in Splunk. I log in to Splunk and navigate to "settings," then "data," and finally "indexes." Once selected, I choose to create a new index named "endpoints" and set it to listen on port 9997.
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-10%20232449.png?raw=true" height="80%" width="80%"/> <br />
 <h3 align="center">Results:</h3>
+<br />
+<br />
+Now, when I travel to "Indexes," I can search for "endpoints," and once selected, I see my virtual machines there under "values."
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20112107.png?raw=true" height="80%" width="80%"/> <br />
