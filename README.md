@@ -115,5 +115,5 @@ Now I have to create the index in Splunk. I log in to Splunk and navigate to "se
 <h3 align="center">Results:</h3>
 <br />
 <br />
-Now, when I travel to "Indexes," I can search for "endpoints," and once selected, I see my virtual machines there under "values."
+Now, when I travel to "Indexes," I can search for "endpoints," and once selected, I see my virtual machines there under "values."<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20112107.png?raw=true" height="80%" width="80%"/> <br />
