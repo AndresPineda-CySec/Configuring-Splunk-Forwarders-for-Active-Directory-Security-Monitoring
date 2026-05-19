@@ -153,4 +153,9 @@ In the left pane, I right-click and choose Create New Group. For this lab, I cre
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20124637.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
-
+<br />
+<br />
+<h3 align="center">Joining Client Machines to Active Directory:</h3>
+<p align="center">
+<br />
+<br />
