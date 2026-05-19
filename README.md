@@ -1,4 +1,4 @@
-# Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring
+,# Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring
 <h2>Description</h2>
 In this project, I configured Splunk Universal Forwarders on a Windows host and an Active Directory server to centralize Security Event logs for monitoring and analysis. I then simulated a brute-force attack against the host machine and used Splunk to identify failed authentication attempts.
 <br />
@@ -122,4 +122,18 @@ Now, when I travel to "Indexes," I can search for "endpoints," and once selected
 <br />  
 <h3 align="center">Setting Up Active Directory:</h3>
 <p align="center">
+<br />
+<br />
+The next step is to set up Active Directory on my Windows Server VM. After opening the VM, I go to “Manage” and then “Add Roles and Features” in Server Manager. This opens the “Add Roles and Features Wizard,” where I select “Role-based or feature-based installation.”<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20122548.png?raw=true" height="70%" width="70%"/> <br />
+<br />
+<br />
+Next, I select my Windows Server machine as the destination server for the Active Directory installation.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20122618.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+Next, I leave “File and Storage Services” selected and choose “Active Directory Domain Services” in the “Select Server Roles” section. I do this because Active Directory Domain Services enables the server to function as a domain controller, which manages resources within the domain.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20122714.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
 
