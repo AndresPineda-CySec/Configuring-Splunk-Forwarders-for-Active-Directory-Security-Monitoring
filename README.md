@@ -143,3 +143,14 @@ I select “Next” for the remaining options and complete the installation. Aft
 <br />
 Now the Active Directory Domain Services Configuration Wizard opens. In the Deployment Configuration section, I select “Add a new forest,” which indicates that this will be the first domain in a new Active Directory environment rather than joining an existing one. I then set the Root Domain Name to apcysec.local.<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20123046.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+I select “Next” for the remaining configuration options and complete the wizard. With Active Directory now set up, I move on to creating test users. Back in Server Manager, I open the Tools menu in the top-right corner and select Active Directory Users and Computers. This launches the management console, where I can manage domains, users, and groups.
+In the left pane, I right-click and choose Create New Group. For this lab, I create two groups, IT and HR, and add one user to each.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20124617.png?raw=true," height="80%" width="80%"/> <br />
+<br />
+<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20124637.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+
