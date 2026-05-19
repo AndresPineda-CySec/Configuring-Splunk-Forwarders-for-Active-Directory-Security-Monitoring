@@ -1,4 +1,5 @@
-Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring
+<h1>Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring<h1>
+
 <h2>Description</h2>
 In this project, I configured Splunk Universal Forwarders on a Windows host and an Active Directory server to centralize Security Event logs for monitoring and analysis. I then simulated a brute-force attack against the host machine and used Splunk to identify failed authentication attempts.
 <br />
