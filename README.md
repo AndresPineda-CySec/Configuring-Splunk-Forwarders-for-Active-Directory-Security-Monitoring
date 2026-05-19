@@ -137,4 +137,9 @@ Next, I leave “File and Storage Services” selected and choose “Active Dire
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20122714.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
-
+I select “Next” for the remaining options and complete the installation. After the installation finishes, I close the wizard and return to Server Manager, where a notification alert appears indicating that additional configuration is required for the newly installed Active Directory Domain Services role. To continue the setup process, I select “Promote this server to a domain controller.”<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20122949.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+Now the Active Directory Domain Services Configuration Wizard opens. In the Deployment Configuration section, I select “Add a new forest,” which indicates that this will be the first domain in a new Active Directory environment rather than joining an existing one. I then set the Root Domain Name to apcysec.local.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20123046.png?raw=true" height="80%" width="80%"/> <br />
