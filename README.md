@@ -159,3 +159,5 @@ In the left pane, I right-click and choose Create New Group. For this lab, I cre
 <p align="center">
 <br />
 <br />
+After creating users on my Windows Server machine, I go to my Windows 10 VM to join the computer to the Active Directory Domain. I go to my system settings and select "Advanced System Settings." There, I select the "Change name" tab and click "Change" to change the domain name. I type apcysec.local as the domain name, but I get an error. This is an easy fix...<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20125105.png?raw=true" height="80%" width="80%"/> <br />
