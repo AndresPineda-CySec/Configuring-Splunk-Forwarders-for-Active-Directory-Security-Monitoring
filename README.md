@@ -161,3 +161,31 @@ In the left pane, I right-click and choose Create New Group. For this lab, I cre
 <br />
 After creating users on my Windows Server machine, I go to my Windows 10 VM to join the computer to the Active Directory Domain. I go to my system settings and select "Advanced System Settings." There, I select the "Change name" tab and click "Change" to change the domain name. I type apcysec.local as the domain name, but I get an error. This is an easy fix...<br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20125105.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+…I go to Advanced Network Connections, open Ethernet properties, and double-click IPv4. Once there, I FINALLY replace my temporary DNS server (8.8.8.8) with my domain controller’s IP: 192.168.10.7.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20125250.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+Now, when I retry the previous step, I can sign in to my AD domain.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20125422.png?raw=true" height="60%" width="60%"/> <br />
+<br />
+<br />
+After logging in, I receive a message confirming that I have successfully joined the domain. I restart the computer and log back in as both users I made earlier.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20125511.png?raw=true" height="50%" width="50%"/> <br />
+<br />
+<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20125738.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+<br />
+<br />
+<h3 align="center">Setting Up the Attack:</h3>
+<p align="center">
+<br />
+<br />
+I'm going to use Hydra to brute-force my way into my new accounts via RDP. After logging back into the Elizabeth Go account, I'll navigate to Advanced Settings, which now requires admin credentials. Once permissions have been granted, I add the account to the RDP group so the attack can function properly. I'll repeat the same process for the Andy Pineda account.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20174730.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+
