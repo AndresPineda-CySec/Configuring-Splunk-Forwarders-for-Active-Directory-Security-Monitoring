@@ -188,4 +188,11 @@ I'm going to use Hydra to brute-force my way into my new accounts via RDP. After
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20174730.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
-
+The next step takes place on my Kali machine, so now I have to switch over. First, I create a directory on my desktop called ad-lab. After that, I use the ls command inside the wordlists directory to view its contents. Once I find the file I want to use for my brute-force attack, I copy it into the new directory I created on my desktop. I’m copying it because I plan on making a few modifications to the list before using it.<br />
+<img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-11%20155257.png?raw=true" height="80%" width="80%"/> <br />
+<br />
+<br />
+Considering the wordlist file I’m using, rockyou.txt, contains over 14 million passwords, I’m going to create a smaller file called passwords using only the last 20 entries from the original list. I’m doing this to simplify the lab and drastically reduce the attack's runtime. While in the terminal, I change directory into my ad-lab folder using "cd ~/Desktop/ad-lab." Once I’m inside the folder, I extract the last 20 lines of rockyou.txt and redirect them into a new file called passwords using the command "tail -n 20 rockyou.txt > passwords." After that, I open the file in Nano to manually add the correct password for one of my test accounts. Inside Nano, I add the correct password at the bottom of the file, increasing the total count from 20 to 21 entries. After saving and exiting Nano, the updated password file is ready for the next step.
+<br />
+<br />
+Now im finally going to simulate the Attack.
