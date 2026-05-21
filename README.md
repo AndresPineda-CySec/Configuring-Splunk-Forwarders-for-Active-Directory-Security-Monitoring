@@ -209,13 +209,13 @@ Now I log back into Splunk and open Search & Reporting. From there, I search for
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-12%20152601.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
-I double-click 4625, which reveals the meaning of the code and the host's name and IP address that tried to log in. When examining all the entries, you could see that each attempt was made seconds apart, a telltale sign of a brute-force attack. Double-clicking on 4624 reveals the IP that did all those failed logins actually successfully logged in, good thing this is just a lab.
+I double-click 4625, which reveals the code’s meaning along with the host name and IP address that tried to log in. When I go through the entries, you can literally see each attempt happening seconds apart, which is a classic telltale sign of a brute-force attack. Then I double-click 4624 and look for the IP that made all those failed login attempts. Eventually, I learned that the attacker finally got in. Good thing this is just a lab :) <br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-12%20152712.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
 <img src="https://github.com/AndresPineda-CySec/Configuring-Splunk-Forwarders-for-Active-Directory-Security-Monitoring/blob/main/images/Screenshot%202026-05-12%20152809.png?raw=true" height="80%" width="80%"/> <br />
 <br />
 <br />
-That concludes this Project!
+That concludes the Project!
 
 
